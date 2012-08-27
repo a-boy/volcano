@@ -151,6 +151,9 @@ enable-auto-props = yes
 *.wav        = svn:mime-type=audio/wav
 *.xls        = svn:mime-type=application/vnd.ms-excel
 *.zip        = svn:mime-type=application/zip
+*.nbp        = svn:mime-type=application/vnd.wolfram.player
+*.nb         = svn:mime-type=application/vnd.wolfram.mathematica
+*.cdf        = svn:mime-type=application/vnd.wolfram.cdf
 
 # Text formats
 .htaccess    = svn:mime-type=text/plain
