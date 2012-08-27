@@ -53,19 +53,19 @@ function showPoem(link){
 	var temptxt=txt.toString().replace(/\s+/mg,'');
 	var key = temptxt.substr(Math.ceil(temptxt.length*Math.random()),Math.ceil(3*Math.random()));
 	//alert(key)
-	gs.execute(key);
 	
 	if (navigator.appName == 'Microsoft Internet Explorer')
   	{
     	 txt = txt.replace(/\n/g,'<br>')
  	}
 	document.getElementById("board").innerHTML = txt;
-	
+	gs.execute(key);
 }
 </script>
 </head>
 
 <body>
+
 <header>
 <h4>纯情主义诗歌19首 - 阿蒙诗歌习作第1辑</h4>
 </header>
@@ -567,6 +567,21 @@ PS:在收获的季节，我们满怀喜悦又黯然神伤，
  
 </pre>
  	<div id="searchcontrol">Loading</div> 
+    <div style='float:right'>       
+      <!--google adsense begin-->
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-5009827137558101";
+/* 120 x 600 - Skyscraper aboy.aliapp */
+google_ad_slot = "7205997338";
+google_ad_width = 120;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+      <!--google adsense end-->
+     </div>
  </div>
  
 </body>
