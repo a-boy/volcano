@@ -1,0 +1,41 @@
+.basic  {
+	width: 260px;
+	
+	border: 1px solid blue;
+}
+.basic div {
+	background-color: #eee;
+}
+
+.basic pre {
+	margin-bottom : 10px;
+	border: none;
+	text-decoration: none;
+	font-size: 14px;
+	margin: 0px;
+	padding: 10px;
+}
+.basic a {
+	cursor:pointer;
+	display:block;
+	padding:5px;
+	margin-top: 0;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 15px;
+	color: #0F0;
+	background-color: #00a0c6;
+	border-top: 1px solid #FFFFFF;
+	border-bottom: 1px solid #999;
+	
+	background-image: url("AccordionTab0.gif");
+}
+.basic a:hover {
+	background-color: white;
+	background-image: url("AccordionTab2.gif");
+}
+.basic a.selected {
+	color: darkorange;
+	background-color: #80cfe2;
+	background-image: url("AccordionTab2.gif");
+}
