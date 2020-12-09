@@ -1,0 +1,23 @@
+1.比较大小: a:=Internet .com 域名总数
+b:=Google注册用户总数, 估算a,b,a/b分别是一个什么数量级的数
+
+2.qq空间系统为新用户写第一篇日记,现在请你帮系统开发者来写这篇日记
+
+3.In computing, a quine is a computer program which produces a copy of its own source code as its only output. Now, please write a reverse-quine, which produces the reverse string of its own source code as its only output. Does it exist a reverse quine? If not, why?
+
+4. 用内存4G硬盘1T的无网络连接的计算机计算阶乘n!,请估算可以算出n!的最大n值
+
+5.网页设计时确定使用四种前景颜色x,y,z,w,请写个函数f(x,y,z,w),输出最佳视觉效果的背景色
+
+
+这些题目看起来有点难
+我回到学校
+在奥思题库里搜索信息奥赛题目
+也许对这次笔试会有帮助
+
+我找到了这么一些问题
+有些有提示或解答
+有的还只有题干
+
+1. 1)给出这样的两个汉字,现在在google搜索这个词语时,结果为找不到相符的内容或信息,或者搜索结果仅有你的回答. 
+   2)给出这样的6个字母内组合的英文单词.
