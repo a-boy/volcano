@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎵 阿蒙的音乐作品集 | volcano music</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: "Microsoft YaHei", "PingFang SC", "Helvetica Neue", Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 2rem;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 3rem;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 2px solid #667eea;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            color: #667eea;
+            margin-bottom: 0.5rem;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            color: #666;
+            font-style: italic;
+        }
+        
+        .project {
+            margin-bottom: 3rem;
+            padding: 2rem;
+            background: linear-gradient(to right, #f8f9fa, #fff);
+            border-radius: 15px;
+            border-left: 5px solid #667eea;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .project:hover {
+            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.3);
+        }
+        
+        .project-title {
+            font-size: 1.8rem;
+            color: #764ba2;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .media-grid {
+            display: grid;
+            gap: 2rem;
+        }
+        
+        .media-item {
+            padding: 1.5rem;
+            background: white;
+            border-radius: 10px;
+            border: 2px solid #e0e0e0;
+            transition: all 0.3s ease;
+        }
+        
+        .media-item:hover {
+            border-color: #667eea;
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);
+        }
+        
+        .media-title {
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.1rem;
+        }
+        
+        .file-type {
+            display: inline-block;
+            padding: 0.2rem 0.6rem;
+            background: #667eea;
+            color: white;
+            border-radius: 5px;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+        }
+        
+        .media-content {
+            margin-top: 1rem;
+        }
+        
+        .media-content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        .media-content audio {
+            width: 100%;
+            margin-top: 0.5rem;
+        }
+        
+        .download-link {
+            display: inline-block;
+            margin-top: 0.5rem;
+            padding: 0.5rem 1rem;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            transition: background 0.3s ease;
+        }
+        
+        .download-link:hover {
+            background: #764ba2;
+        }
+        
+        .file-info {
+            font-size: 0.85rem;
+            color: #999;
+            margin-top: 0.5rem;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 2px solid #667eea;
+            color: #666;
+        }
+        
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            margin: 2rem 0;
+            padding: 1.5rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 15px;
+            color: white;
+        }
+        
+        .stat-item {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        
+        .stat-label {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+        
+        .section-group {
+            margin-bottom: 2rem;
+        }
+        
+        .section-subtitle {
+            font-size: 1.2rem;
+            color: #667eea;
+            margin: 1.5rem 0 1rem 0;
+            padding-left: 0.5rem;
+            border-left: 3px solid #667eea;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎵 阿蒙的音乐作品集</h1>
+            <p class="subtitle">纯情 · 简洁 · 自由 · 奔放</p>
+        </header>
+        
+        <div class="stats">
+            <div class="stat-item">
+                <div class="stat-number">4</div>
+                <div class="stat-label">音乐项目</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">23</div>
+                <div class="stat-label">文件总数</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">5.6 MB</div>
+                <div class="stat-label">总大小</div>
+            </div>
+        </div>
+        
+        <main>
+            <!-- white_butterfly -->
+            <section class="project">
+                <h2 class="project-title">🦋 white_butterfly (追逐花丛中翩翩飞的白蝴蝶)</h2>
+                
+                <div class="section-group">
+                    <h3 class="section-subtitle">🎨 视觉作品</h3>
+                    <div class="media-grid">
+                        <div class="media-item">
+                            <div class="media-title">
+                                <span class="file-type">png</span>
+                                追逐花丛中翩翩飞的白蝴蝶.png
+                            </div>
+                            <div class="media-content">
+                                <img src="white_butterfly/追逐花丛中翩翩飞的白蝴蝶.png" alt="追逐花丛中翩翩飞的白蝴蝶">
+                            </div>
+                            <div class="file-info">24.1 KB</div>
+                        </div>
+                        
+                        <div class="media-item">
+                            <div class="media-title">
+                                <span class="file-type">png</span>
+                                white_butterfly.png
+                            </div>
+                            <div class="media-content">
+                                <img src="white_butterfly/white_butterfly.png" alt="white butterfly">
+                            </div>
+                            <div class="file-info">112.5 KB</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="section-group">
+                    <h3 class="section-subtitle">🎼 乐谱文件</h3>
+                    <div class="media-grid">
+                        <div class="media-item">
+                            <div class="media-title">
+                                <span class="file-type">cwp</span>
+                                white_butterfly.cwp
+                            </div>
+                            <div class="file-info">661.1 KB · Cakewalk Project</div>
+                            <a href="white_butterfly/white_butterfly.cwp" class="download-link" download>📥 下载</a>
+                        </div>
+                        
+                        <div class="media-item">
+                            <div class="media-title">
+                                <span class="file-type">mid</span>
+                                white_butterfly.mid
+                            </div>
+                            <div class="file-info">698 B · MIDI</div>
+                            <a href="white_butterfly/white_butterfly.mid" class="download-link" download>📥 下载</a>
+                        </div>
+                        
+                        <div class="media-item">
+                            <div class="media-title">
+                                <span class="file-type">ove</span>
+                                white_butterfly.ove
+                            </div>
+                            <div class="file-info">13.3 KB · Overture</div>
+                            <a href="white_butterfly/white_butterfly.ove" class="download-link" download>📥 下载</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- 共享 -->
+            <section class="project">
+                <h2 class="project-title">🤝 共享</h2>
+                
+                <div class="section-group">
+                    <h3 class="section-subtitle">🎵 音频作品</h3>
+                    <div class="media-grid">
+                        <div class="media-item">
+                            <div class="media-title">
+                                <span class="file-type">mp3</span>
+                                共享(伴奏midi转).mp3
+                            </div>
+                            <div class="media-content">
+                                <audio controls>
+                                    <source src="共享/共享(伴奏midi转).mp3" type="audio/mpeg">
+                                    您的浏览器不支持音频播放
+                                </audio>
+                            </div>
+                            <div class="file-info">1.1 MB</div>
+                        </div>
+                        
+                        <div class="media-item">
+                            <div class="media-title">
+                                <span class="file-type">mp3</span>
+                                共享(纯音乐).mp3
+                            </div>
+                            <div class="media-content">
+                                <audio controls>
+                                    <source src="共享/共享(纯音乐).mp3" type="audio/mpeg">
+                                    您的浏览器不支持音频播放
+                                </audio>
+                            </div>
+                            <div class="file-info">1.7 MB</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="section-group">
+                    <h3 class="section-subtitle">🎼 乐谱文件</h3>
+                    <div class="media-grid">
+                        <div class="media-item">
+                            <div class="media-title">
+                                <span class="file-type">pdf</span>
+                                共享.pdf
+                            </div>
+                            <div class="file-info">54.1 KB · 乐谱PDF</div>
+                            <a href="共享/共享.pdf" class="download-link" target="_blank">👁️ 查看</a>
+                            <a href="共享/共享.pdf" class="download-link" download>📥 下载</a>
+                        </div>
+                        
+                        <div class="media-item">
+                            <div class="media-title">
+                                <span class="file-type">txt</span>
+                                共享.txt
+                            </div>
+                            <div class="file-info">250 B · 歌词</div>
+                            <a href="共享/共享.txt" class="download-link" target="_blank">👁️ 查看</a>
+                        </div>
+                        
+                        <div class="media-item">
+                            <div class="media-title">
+                                <span class="file-type">flp</span>
+                                共享.flp
+                            </div>
+                            <div class="file-info">106.3 KB · FL Studio</div>
+                            <a href="共享/共享.flp" class="download-link" download>📥 下载</a>
+                        </div>
+                        
+                        <div class="media-item">
+                            <div class="media-title">
+                                <span class="file-type">mid</span>
+                                共享.mid
+                            </div>
+                            <div class="file-info">7.6 KB · MIDI</div>
+                            <a href="共享/共享.mid" class="download-link" download>📥 下载</a>
+                        </div>
+                        
+                        <div class="media-item">
+                            <div class="media-title">
+                                <span class="file-type">ove</span>
+                                共享.ove
+                            </div>
+                            <div class="file-info">21.5 KB · Overture</div>
+                            <a href="共享/共享.ove" class="download-link" download>📥 下载</a>
+                        </div>
+                        
+                        <div class="media-item">
+                            <div class="media-title">
+                                <span class="file-type">sib</span>
+                                共享.sib
+                            </div>
+                            <div class="file-info">48.1 KB · Sibelius</div>
+                            <a href="共享/共享.sib" class="download-link" download>📥 下载</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- 坠入爱河的火星人2 -->
+            <section class="project">
+                <h2 class="project-title">🚀 坠入爱河的火星人2</h2>
+                
+                <div class="section-group">
+                    <h3 class="section-subtitle">🎵 音频作品</h3>
+                    <div class="media-grid">
+                        <div class="media-item">
+                            <div class="media-title">
+                                <span class="file-type">mp3</span>
+                                坠入爱河的火星人2(Fruity DX10).mp3
+                            </div>
+                            <div class="media-content">
+                                <audio controls>
+                                    <source src="坠入爱河的火星人2/坠入爱河的火星人2(Fruity DX10).mp3" type="audio/mpeg">
+                                    您的浏览器不支持音频播放
+                                </audio>
+                            </div>
+                            <div class="file-info">1.0 MB</div>
+                        </div>
+                        
+                        <div class="media-item">
+                            <div class="media-title">
+                                <span class="file-type">mp3</span>
+                                坠入爱河的火星人2(PoiZone).mp3
+                            </div>
+                            <div class="media-content">
+                                <audio controls>
+                                    <source src="坠入爱河的火星人2/坠入爱河的火星人2(PoiZone).mp3" type="audio/mpeg">
+                                    您的浏览器不支持音频播放
+                                </audio>
+                            </div>
+                            <div class="file-info">1.0 MB</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="section-group">
+                    <h3 class="section-subtitle">📝 歌词与乐谱</h3>
+                    <div class="media-grid">
+                        <div class="media-item">
+                            <div class="media-title">
+                                <span class="file-type">txt</span>
+                                阿蒙 - 坠入爱河的火星人2.txt
+                            </div>
+                            <div class="file-info">311 B · 歌词</div>
+                            <a href="坠入爱河的火星人2/阿蒙 - 坠入爱河的火星人2.txt" class="download-link" target="_blank">👁️ 查看</a>
+                        </div>
+                        
+                        <div class="media-item">
+                            <div class="media-title">
+                                <span class="file-type">flp</span>
+                                坠入爱河的火星人2.flp
+                            </div>
+                            <div class="file-info">101.2 KB · FL Studio</div>
+                            <a href="坠入爱河的火星人2/坠入爱河的火星人2.flp" class="download-link" download>📥 下载</a>
+                        </div>
+                        
+                        <div class="media-item">
+                            <div class="media-title">
+                                <span class="file-type">mid</span>
+                                坠入爱河的火星人2.mid
+                            </div>
+                            <div class="file-info">5.1 KB · MIDI</div>
+                            <a href="坠入爱河的火星人2/坠入爱河的火星人2.mid" class="download-link" download>📥 下载</a>
+                        </div>
+                        
+                        <div class="media-item">
+                            <div class="media-title">
+                                <span class="file-type">sib</span>
+                                坠入爱河的火星人2.sib
+                            </div>
+                            <div class="file-info">83.8 KB · Sibelius</div>
+                            <a href="坠入爱河的火星人2/坠入爱河的火星人2.sib" class="download-link" download>📥 下载</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- 漫步在飘洒的小雨里 -->
+            <section class="project">
+                <h2 class="project-title">🌧️ 漫步在飘洒的小雨里</h2>
+                
+                <div class="section-group">
+                    <h3 class="section-subtitle">🎵 音频作品</h3>
+                    <div class="media-grid">
+                        <div class="media-item">
+                            <div class="media-title">
+                                <span class="file-type">ogg</span>
+                                漫步在飘洒的小雨里.ogg
+                            </div>
+                            <div class="media-content">
+                                <audio controls>
+                                    <source src="漫步在飘洒的小雨里/漫步在飘洒的小雨里.ogg" type="audio/ogg">
+                                    您的浏览器不支持音频播放
+                                </audio>
+                            </div>
+                            <div class="file-info">335.9 KB</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="section-group">
+                    <h3 class="section-subtitle">🎨 视觉作品</h3>
+                    <div class="media-grid">
+                        <div class="media-item">
+                            <div class="media-title">
+                                <span class="file-type">png</span>
+                                walking_in_rain.png
+                            </div>
+                            <div class="media-content">
+                                <img src="漫步在飘洒的小雨里/walking_in_rain.png" alt="walking in rain">
+                            </div>
+                            <div class="file-info">116.2 KB</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="section-group">
+                    <h3 class="section-subtitle">🎼 乐谱文件</h3>
+                    <div class="media-grid">
+                        <div class="media-item">
+                            <div class="media-title">
+                                <span class="file-type">mid</span>
+                                漫步在飘洒的小雨里.mid
+                            </div>
+                            <div class="file-info">538 B · MIDI</div>
+                            <a href="漫步在飘洒的小雨里/漫步在飘洒的小雨里.mid" class="download-link" download>📥 下载</a>
+                        </div>
+                        
+                        <div class="media-item">
+                            <div class="media-title">
+                                <span class="file-type">ove</span>
+                                漫步在飘洒的小雨里.ove
+                            </div>
+                            <div class="file-info">13.2 KB · Overture</div>
+                            <a href="漫步在飘洒的小雨里/漫步在飘洒的小雨里.ove" class="download-link" download>📥 下载</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <footer>
+            <p>🌟 创作者：阿蒙 (ahmeng) aka a-boy</p>
+            <p style="margin-top: 1rem; font-style: italic;">让创作像火山一样，自由爆发 🚀</p>
+            <p style="margin-top: 1rem; font-size: 0.85rem;">生成时间：2025-12-29</p>
+        </footer>
+    </div>
+</body>
+</html>
